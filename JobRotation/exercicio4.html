@@ -1,0 +1,38 @@
+<html>
+	<head>
+	</head>
+	<body>
+		
+		<!-- Exercício da distribuidora por Estado -->
+		
+		<script>
+			
+			// Valores de faturamento por Estado
+			const VALOR_SP = 67836.43;
+			const VALOR_RJ = 36678.66;
+			const VALOR_MG = 29229.88;
+			const VALOR_ES = 27165.48;
+			const VALOR_OUTROS = 19849.53;
+			
+			// Obtendo a quantidade total
+			const TOTAL = VALOR_SP + VALOR_RJ + VALOR_MG + VALOR_ES + VALOR_OUTROS;
+			
+			// Função util para obter um valor referente em porcentagem
+			// automaticamente arredonda em duas casas decimais
+			function regiao_porcentagem(valor){
+				return ((valor/TOTAL)*100).toFixed(2);
+			}
+			
+			alert(
+				"O faturamento por estado em Porcentagem:"+
+				"\nSP: "+ regiao_porcentagem(VALOR_SP) +"%"+
+				"\nRJ: "+ regiao_porcentagem(VALOR_RJ) +"%"+
+				"\nMG: "+ regiao_porcentagem(VALOR_MG) +"%"+
+				"\nES: "+ regiao_porcentagem(VALOR_ES) +"%"+
+				"\nOutros: "+ regiao_porcentagem(VALOR_OUTROS) +"%"
+				);
+			
+		</script>
+		
+	<body>
+</html>

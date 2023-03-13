@@ -1,0 +1,37 @@
+<html>
+	<head>
+	</head>
+	<body>
+		
+		<!-- Algoritmo Fibonacci Abaixo -->
+		
+		<script>
+			
+			// Solicitando o valor ao usuário e obtendo a entrada
+			var valor = Number(prompt("Informe um valor:"));
+			
+			// Definindo as variáveis auxiliares
+			var anterior = 1;
+			var posterior = 1;
+			
+			// Essa iteração executa apenas enquanto a sequência não atingiu o valor
+			// informado pelo usuário
+			while(posterior<valor){
+				var soma = posterior+anterior;
+				anterior = posterior;
+				posterior = soma;
+			}
+			
+			// Compara o último valor da sequência com o valor informado
+			// para determinar se este pertence ou não
+			if(posterior==valor){
+				alert("O valor informado pertence a sequência de Fibonacci!");
+			}
+			else{
+				alert("O valor informado NÃO pertence a sequência de Fibonacci!");
+			}
+			
+		</script>
+		
+	<body>
+</html>

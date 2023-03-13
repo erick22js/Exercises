@@ -1,0 +1,28 @@
+<html>
+	<head>
+	</head>
+	<body>
+		
+		<!-- Exercício de inversão de uma String -->
+		
+		<script>
+			
+			// Obtendo o texto do usuário e armazenando
+			var in_texto = prompt("Informe um nome para ser invertido:");
+			
+			// Declarando variável que armazenará o resultado
+			var rev_texto = "";
+			
+			// Realizando um laço invertido
+			// Ele obtém os caracteres na ordem reversa, porém, insere no final
+			// da variável rev_texto, dessa forma, invertendo o texto
+			for(var i=in_texto.length-1; i>=0; i--){
+				rev_texto += in_texto.charAt(i);
+			}
+			
+			alert("O texto invertido fica: "+rev_texto);
+			
+		</script>
+		
+	<body>
+</html>
